@@ -1,14 +1,131 @@
-<html>
-<head>
-   <title>GameHub</title>
-   <style>
-   #frame { position:absolute; top:10px; bottom:0px; right:10px;
-      width:200px; height:200px; background-color:black; color:white; }
-   </style>
-</head>
-<body>
+body {
+    background-color: #18295c;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px;
 
-<div id="frame">This is a frame of 200px width and 200px height.</div>
 
-</body>
-</html>
+    }
+
+
+.container {
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px
+   
+
+}
+.container div{
+    padding: 0px;
+    border: solid #ffffff;
+}
+
+
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    color: #000000;
+    font-size:x-large;
+    background-color: #ffffff;
+    background-size: auto;
+    text-align: center;
+}
+
+.news {
+    background: white;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    
+}
+
+.quicklinks {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.preorder {
+    grid-row-start: 4;
+    grid-row-end: 7;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+
+.usedgames {
+    grid-row-start: 4;
+    grid-row-end: 7;
+    grid-column-start: 4;
+    grid-column-end: 6;
+
+}
+.contact{
+    grid-column-start: 1;
+    grid-column-end:span 6;
+    grid-row-start: 8;
+    grid-row-end: 10;
+}
+
+nav {
+    width: 100%;
+    overflow:auto;
+    background: #18295c;
+}
+
+ul{
+    padding: 0%;
+    margin: 0 0 0 0 250px;
+    list-style: none;
+
+}
+
+li{
+    float: left;
+    
+}
+
+li a{
+    width: 250px;
+    display: block;
+    padding: 25px 15px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    
+
+}
+
+li a:hover{
+    background: #2d87a8;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 5%;
+    max-width: 13%;
+    float: left;
+    margin-top: -3.5cm;
+    margin-left: 1cm;
+    size-adjust: auto;
+}
+
+.news img{
+   
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: auto;
+    margin-left: 0cm;
+    object-fit: cover;
+    
+}
+
