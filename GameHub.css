@@ -46,14 +46,35 @@ body {
     
 }
 
+.news img {
+   
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: auto;
+    margin-left: 0cm;
+    object-fit: cover;
+    
+}
 .quicklinks {
+    background: white;
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 4;
 }
 
+.quicklinks img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: auto;
+    margin-left: 0cm;
+    object-fit: cover;
+}
+
+
+
 .preorder {
+    background: white;
     grid-row-start: 4;
     grid-row-end: 7;
     grid-column-start: 2;
@@ -62,6 +83,7 @@ body {
 }
 
 .usedgames {
+    background: white;
     grid-row-start: 4;
     grid-row-end: 7;
     grid-column-start: 4;
@@ -69,6 +91,7 @@ body {
 
 }
 .contact{
+    background: white;
     grid-column-start: 1;
     grid-column-end:span 6;
     grid-row-start: 8;
@@ -109,7 +132,7 @@ li a:hover{
     background: #2d87a8;
     text-transform: uppercase;
 }
-
+/*logo*/
 img {
     max-width: 5%;
     max-width: 13%;
@@ -137,7 +160,7 @@ img {
 /*button 1*/
 
 .btn-1{
-   background: #000000; 
+   background: black; 
    color: #ffffff;
    border-radius: 10px;
    transition: transform 0.3s ease;
@@ -173,13 +196,5 @@ img {
 
 
 
-.news img {
-   
-    max-width: 100%;
-    max-height: 100%;
-    margin-top: auto;
-    margin-left: 0cm;
-    object-fit: cover;
-    
-}
+
 
